@@ -1,0 +1,10 @@
+---
+- name: example
+  hosts: localhost
+  gather_facts: no
+  ignore_errors: yes
+  tasks: 
+  - name: file module
+    file: 
+      path: /etc/foo.conf
+      state: touch
